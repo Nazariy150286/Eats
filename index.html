@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eats</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,500&family=Poppins:wght@600;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header fixed-top">
+      <div class="container">
+        <nav class="navbar">
+          <a class="header__logo" href="">
+            <img src="./src/icons/logo.png" alt="logo"
+          /></a>
+          <ul
+            class="header__menu nav d-none d-md-flex col-6 justify-content-around"
+          >
+            <li class="header__item nav-item">
+              <a href="#" class="header__link nav-link">Home</a>
+            </li>
+            <li class="header__item nav-item">
+              <a href="#" class="header__link nav-link">Product</a>
+            </li>
+            <li class="header__item nav-item">
+              <a href="#" class="header__link nav-link">Faq</a>
+            </li>
+            <li class="header__item nav-item">
+              <a href="#" class="header__link nav-link">Contact</a>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler d-md-none hamburger"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Faq</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="promo">
+        <div class="container">
+          <h3 class="promo__text text-center">Restaurant app</h3>
+          <h1 class="promo__title text-center">
+            Why stay hungry when <br />
+            you can order form Eats
+          </h1>
+          <p class="promo__desc text-center">Order in exchange for hunger</p>
+          <div class="promo__btns d-flex justify-content-center pt-3">
+            <button
+              class="promo__btn btn btn-lg m-0"
+              style="
+                color: #fff;
+                border-radius: 30px;
+                background: #fa4a0c;
+                box-shadow: 0px 10px 30px 0px rgba(183, 50, 39, 0.2);
+                border: none;
+                width: 236px;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 36px;
+                letter-spacing: 0.1px;
+                padding: 16px 0;
+              "
+            >
+              Delivery
+            </button>
+
+            <button
+              class="promo__btn btn btn-lg m-0"
+              style="
+                border-radius: 30px;
+                border: 1px solid #fff;
+                color: #fff;
+                width: 236px;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 36px;
+                letter-spacing: 0.1px;
+                padding: 16px 0;
+              "
+            >
+              Menu
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <h2
+            class="about__title text-center"
+            style="
+              color: #000;
+              font-family: Poppins;
+              font-size: 44px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 36px;
+              letter-spacing: 0.1px;
+            "
+          >
+            How the app works
+          </h2>
+          <div class="about__block d-flex">
+            <img src="./src/img/phone.png" alt="phone" />
+            <div class="about__text-block">
+              <h3 class="about__text">Create an account</h3>
+              <h2 class="about__text-title">
+                Create/login to an existing account to get started
+              </h2>
+              <p class="about__desc">
+                An account is created with your email and a desired password
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
