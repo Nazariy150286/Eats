@@ -1,7 +1,7 @@
 .order {
-  background: url(../../src/img/order-bg.png) no-repeat;
+  background: url(../src/img/order-bg.png) no-repeat;
   background-size: cover;
-  padding: 146px 131px;
+  padding: 146px 0;
   &__btns {
     display: flex;
     gap: 16px;
